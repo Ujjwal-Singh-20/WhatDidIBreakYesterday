@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>What Did I Break Yesterday</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>What Did I Break Yesterday</h1>
+
+    <form id="digest-form">
+      <label>
+        Workspace ID
+        <input type="text" id="workspace-id" placeholder="Optional: existing workspace id" />
+        <p>{Owner}-{Repo}</p>
+      </label>
+
+      <button type="button" id="load-workspace">Load Workspace</button>
+
+      <hr />
+
+      <label>
+        GitHub Token
+        <input type="password" id="token" placeholder="Required when saving a new workspace" />
+        <p>Token stays empty on purpose, when loading a saved workspace; stored token is used automatically when running digest</p>
+      </label>
+
+      <label>
+        Owner
+        <input type="text" id="owner" required />
+      </label>
+
+      <label>
+        Repo
+        <input type="text" id="repo" required />
+      </label>
+
+      <label>
+        Date
+        <input type="date" id="date" />
+      </label>
+
+      <div class="button-row">
+        <button type="submit">Run Digest</button>
+        <button type="button" id="save-workspace">Save Workspace</button>
+      </div>
+    </form>
+
+    <div id="status"></div>
+    <div id="summary"></div>
+    <div id="results"></div>
+
+    <div id="failures-container">
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "daily-digest-flow",
+    "config": {
+      "steps\\workspace-config-save.step.ts": {
+        "x": 535,
+        "y": 334
+      },
+      "steps\\workspace-config-get.step.ts": {
+        "x": 0,
+        "y": 0
+      },
+      "steps\\track-error-api.step.ts": {
+        "x": 35,
+        "y": 151
+      },
+      "steps\\save-workspace-config.step.ts": {
+        "x": 7,
+        "y": 302
+      },
+      "steps\\run-digest.step.ts": {
+        "x": 51,
+        "y": 453
+      },
+      "steps\\manual-digest-api.step.ts": {
+        "x": 24,
+        "y": 536
+      },
+      "steps\\format-dev-digests.step.ts": {
+        "x": 289,
+        "y": 453
+      },
+      "steps\\digest-preview-api.step.ts": {
+        "x": 22,
+        "y": 687
+      },
+      "steps\\daily-digest-trigger.step.ts": {
+        "x": 738,
+        "y": 17
+      }
+    }
+  }
+]

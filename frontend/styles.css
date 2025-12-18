@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0d1117;              /* GitHub dark */
+  color: #c9d1d9;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  background: #161b22;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #30363d;
+}
+
+h1 {
+  margin-top: 0;
+  color: #f0f6fc;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 0.85rem;
+  color: #8b949e;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background: #1f3b65ff;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 0.55rem;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #58a6ff;
+}
+
+button {
+  background: #238636;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+#status {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #58a6ff;
+}
+
+#summary {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.summary-grid div {
+  background: #161b22;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-weight: 600;
+}
+
+.dev-card {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.dev-card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #f0f6fc;
+}
+
+.dev-card h2:has(span.bot) {
+  color: #d2a8ff;
+}
+
+.section {
+  margin-top: 1.2rem;
+}
+
+.section h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section h3::before {
+  margin-right: 0.4rem;
+}
+
+.section h3:contains("Pull Requests") {
+  color: #58a6ff;
+}
+
+.section h3:contains("Commits") {
+  color: #3fb950;
+}
+
+.section ul li a {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.todo {
+  color: #f2cc60;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.todo::before {
+  content: "⚠ ";
+}
+
+#results:empty::after {
+  content: "No activity for this date.";
+  color: #8b949e;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
